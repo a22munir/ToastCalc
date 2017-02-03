@@ -1,0 +1,108 @@
+
+<head>
+	<title>ToastCalculator</title>
+</head>
+
+<body>
+	{{> navbar }}                     {{> loginButtons  }}
+
+				{{> ccinfo}}
+</body>
+
+
+
+<template name="test">
+    <p> TEST TEST TEST</p>
+</template>
+
+<template name="ccinfo">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Start of row -->
+			<div class="col-md-10">
+	<form id="dates">
+        <br>
+        <p>How many speeches from your CC manual have you done?</p>
+         <input type="range" min="0" max="10" step="1" value="0" data-rangeslider > 
+        <br>        <br>
+
+		<p>When did you join ToastMasters?
+			<input type="date" class="joinCC"> </p>
+		<p>When do you hope to finish your CC?
+			<input type="date" class="finishCC">
+		</p>
+		<input type="submit" class="btn">
+        {{numSpeeches}}
+	</form>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="footer">
+    <p>CopyRight AazirMunir</p>
+</template>
+<!--
+<template name="ccprojects">
+	<form>
+		<ul class="listItems">
+			{{#each tasks}}
+			<li>
+				<input type="checkbox"> Speech # {{this}}
+			</li>
+			{{/each}}
+			<li>
+				<br>
+				<input type="submit" class="btn">
+			</li>
+		</ul>
+
+	</form>
+
+</template>
+
+-->
+
+<template name="navbar">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ToastCalculator
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">CC Calculator <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">CL Calculator</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+</template>
+
+<template name="ApplicationLayout">
+    <nav>
+    {{yield  "navbar"}}
+    </nav>
+    <section>
+    {{yield "content"}}
+    </section>
+    <footer>
+    {{yield "footer"}}
+    </footer>
+</template>

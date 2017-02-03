@@ -1,0 +1,26 @@
+.listItems {
+	list-style-type: none;
+}
+
+.rangeslider,
+input[type='range'] {
+  max-width: 400px;
+}
+
+.rangeslider__ruler {
+  cursor: pointer;
+  font-size: 1em;
+  margin: 20px 3px 0 3px;
+  position: relative;
+  top: 130%;
+  bottom: 100px;
+  text-align: justify;
+}
+
+// Workaround to justify only one-line.
+// Extra element to force a new line.
+.rangeslider__ruler:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
