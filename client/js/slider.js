@@ -1,43 +1,30 @@
  $(function () {
      var $r = $('input[type="range"]');
-var $ruler = $('<div class="rangeslider__ruler" />');
+     var $ruler = $('<div class="rangeslider__ruler" />');
 
-// Initialize
-$r.rangeslider({
-  polyfill: false,
-  onInit: function() {
-    $ruler[0].innerHTML = getRulerRange(this.min, this.max, this.step);
-    this.$range.prepend($ruler);}
-});
+     // Initialize
+     $r.rangeslider({
+         polyfill: false,
+         onInit: function () {
+             $ruler[0].innerHTML = getRulerRange(this.min, this.max, this.step);
+             this.$range.prepend($ruler);
+         }
+     });
 
-function getRulerRange(min, max, step) {
-  var range = '';
-  var i = 0;
-  
-  while (i <= max) {
-    range += i + ' ';
-    i = i + step;
-  }
-  return range;
-}
+     function getRulerRange(min, max, step) {
+         var range = '';
+         var i = 0;
+
+         while (i <= max) {
+             range += i + ' ';
+             i = i + step;
+         }
+         return range;
+     }
      var $document = $(document);
      var selector = '[data-rangeslider]';
      var $inputRange = $(selector); /** * Example functionality to demonstrate a value feedback * and change the output's value. */
 
-
-    /* function valueOutput(element) {
-         var value = element.value;
-         var output = element.parentNode.getElementsByTagName('output')[0];
-         output.innerHTML = value;
-     } /** * Initial value output
-     for (var i = $inputRange.length - 1; i >= 0; i--) {
-         valueOutput($inputRange[i]);
-     } /** * Update value output */
-     //$document.on('input', selector, function (e) {
-       //  valueOutput(e.target);
-     //$inputRange.rangeslider({
-       //  polyfill: false
-     //}); /** * Example functionality to demonstrate programmatic value changes */
      $document.on('click', '#js-example-change-value button', function (e) {
          var $inputRange = $('[data-rangeslider]', e.target.parentNode);
          var value = $('input[type="number"]', e.target.parentNode)[0].value;
@@ -59,9 +46,4 @@ function getRulerRange(min, max, step) {
              polyfill: false
          });
      });
- });
-
-
- $('input').on('change', function () {
-     console.log($(this).val());
  });

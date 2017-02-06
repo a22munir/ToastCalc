@@ -1,13 +1,13 @@
-/* line 1, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/main.scss */
+/* line 1, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 .listItems {
   list-style-type: none; }
 
-/* line 5, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/main.scss */
+/* line 5, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 .rangeslider,
 input[type='range'] {
   max-width: 400px; }
 
-/* line 10, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/main.scss */
+/* line 10, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 .rangeslider__ruler {
   cursor: pointer;
   font-size: 1em;
@@ -17,10 +17,18 @@ input[type='range'] {
   bottom: 100px;
   text-align: justify; }
 
-/* line 22, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/main.scss */
+/* line 22, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 .rangeslider__ruler:after {
   content: "";
   display: inline-block;
   width: 100%; }
+
+/* line 29, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+.clInterior {
+  margin-left: 30px; }
+
+/* line 33, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+#about {
+  margin-left: 20%; }
 
 /*# sourceMappingURL=main.css.map */
