@@ -1,35 +1,17 @@
 .listItems {
 	list-style-type: none;
 }
-
-.rangeslider,
-input[type='range'] {
-  max-width: 400px;
-}
-
-.rangeslider__ruler {
-  cursor: pointer;
-  font-size: 1em;
-  margin: 20px 3px 0 3px;
-  position: relative;
-  top: 130%;
-  bottom: 100px;
-  text-align: justify;
-}
-
-// Workaround to justify only one-line.
-// Extra element to force a new line.
-.rangeslider__ruler:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-
-
 .clInterior {
-    margin-left: 30px;
+	margin-left: 30px;
 }
-
 #about {
-    margin-left: 20%;
+	margin-left: 20%;
+}
+footer {
+	position: absolute;
+	background-color: #1995dc;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 11%;
 }

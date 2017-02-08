@@ -1,29 +1,16 @@
-<!--
-<head>
-    <title>ToastCalculator</title>
-</head>
-
-<body>
-    <div id="content">
-    {{> navbar }} {{> about}} {{> footer}}
-    </div>
-</body>
-
--->
-
 <template name="ApplicationLayout">
-    <nav>
-        {{> yield "navbar"}}
-    </nav>
-    <section>
-        {{> yield "content"}}
-    </section>
-    <footer>
-        {{> yield "footer"}}
-    </footer>
+	<nav>
+		{{> yield "navbar"}}
+	</nav>
+	<section>
+		{{> yield "content"}}
+	</section>
+	<footer class="footer navbar-static-bottom">
+		{{> yield "footer"}}
+	</footer>
 </template>
 
 
 <template name="footer">
-    <p>Copyright (C) Aazir Munir</p>
+	<p id="footer">Copyright (C) Aazir Munir</p>
 </template>

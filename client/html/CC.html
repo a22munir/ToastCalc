@@ -1,45 +1,75 @@
 <template name="ccinfo">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Start of row -->
-            <div class="col-md-10">
-                <form id="dates">
-                    <br>
-                    <p>How many speeches from your CC manual have you done?</p>
-                    <input type="range" min="0" max="10" step="1" value="0" data-rangeslider>
-                    <br>
-                    <br>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Start of row -->
+			<div class="col-md-10">
+				<form id="dates">
+					<br>
+					<p>How many speeches from your CC manual have you done?</p>
+					<div class="radio">
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5"> 5
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="6"> 6
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="7"> 7
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio8" value="8"> 8
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio9" value="9"> 9
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio10" value="10"> 10
+						</label>
+					</div>
+					<br>
 
-                    <p>When did you join ToastMasters?
-                        <input type="date" class="joinCC"> </p>
-                    <p>When do you hope to finish your CC?
-                        <input type="date" class="finishCC">
-                    </p>
-                    <input type="submit" class="btn btn-success">
-                </form>
+					<p>When did you join ToastMasters?
+						<input type="date" class="joinCC"> </p>
+					<p>When do you hope to finish your CC?
+						<input type="date" class="finishCC">
+					</p>
+					<input type="submit" class="btn btn-success">
+				</form>
 
-            </div>
-        </div>
-    </div>
-    
-    <div id="ccModal" class="modal fade in" role="dialog">
-        <div class="modal-dialog">
+			</div>
+		</div>
+	</div>
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Your Results</h4>
-                </div>
-                <div class="modal-body">
-                    <h3>To finish your CC by your goal date you will have to do a task every {{showGoal}} days</h3>
-                    <h3>At your current rate you will finish your CC in {{showCurr}} days </h3>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+	<div id="ccModal" class="modal fade in" role="dialog">
+		<div class="modal-dialog">
 
-        </div>
-    </div>
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Your Results</h4>
+				</div>
+				<div class="modal-body">
+					<h3>To finish your CC by your goal date you will have to do a task every {{showGoal}} days</h3>
+					<h3>At your current rate you will finish your CC in {{showCurr}} days </h3>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </template>

@@ -1,10 +1,18 @@
 <template name="contact">
-<h1>Contact</h1>
-<p>
-You can contact me for feature requests, bug reports and freelance work using the contact form below. 
-
-I will endeavour to reply to all emails within 24 hours.
-</p>
-    
-{{>contactForm}}
+	<div class="container-fluid">
+		<h1>Contact</h1>
+		<div class="contactText row">
+			<div class="col-md-6">
+				<p>
+					You can contact me for feature requests, bug reports and freelance work using the contact form below.
+					<br>
+					<br> I will endeavour to reply to all emails within 24 hours.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<img src="http://aazirmunir.com/wp-content/uploads/pep-vn/ab/ab1ee21a/color-718x1024-copy-300x297-7f.jpg" style="width: 250px;">
+			</div>
+		</div>
+		<br> {{>contactForm}}
+	</div>
 </template>

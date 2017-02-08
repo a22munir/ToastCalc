@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 
-Users = new Mongo.Collection("Users");
+//Users = new Mongo.Collection("Users");
 
 Meteor.startup(() => {
     console.log("app starting");
