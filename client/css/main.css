@@ -2,33 +2,31 @@
 .listItems {
   list-style-type: none; }
 
-/* line 5, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
-.rangeslider,
-input[type='range'] {
-  max-width: 400px; }
-
-/* line 10, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
-.rangeslider__ruler {
-  cursor: pointer;
-  font-size: 1em;
-  margin: 20px 3px 0 3px;
-  position: relative;
-  top: 130%;
-  bottom: 100px;
-  text-align: justify; }
-
-/* line 22, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
-.rangeslider__ruler:after {
-  content: "";
-  display: inline-block;
-  width: 100%; }
-
-/* line 29, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+/* line 4, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 .clInterior {
   margin-left: 30px; }
 
-/* line 33, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+/* line 7, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
 #about {
   margin-left: 20%; }
+
+/* line 10, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+footer {
+  position: absolute;
+  background-color: #1995dc;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 11%; }
+
+/* line 18, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+#clImg {
+  padding: 10%; }
+
+/* line 21, C:/Users/Munir/Desktop/Aazir/ToastCalc/client/css/main.scss */
+#aboutImg {
+  max-height: 300px;
+  display: block;
+  margin: auto; }
 
 /*# sourceMappingURL=main.css.map */
