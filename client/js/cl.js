@@ -40,7 +40,6 @@ Template.clinfo.events({
 		}
 
 		let nowDays = diff(joinDateFormat, now) //the difference between the join date and now
-		console.log(nowDays);
 		let goalDays = diff(now, finishDateFormat); //the difference between now and the goal date
 		let finalGoalDate = taskRate(numTasksLeft, goalDays);
 		let currentRate = taskRate(numTasksCompleted, nowDays) * numTasksLeft;

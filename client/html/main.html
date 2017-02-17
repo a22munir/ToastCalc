@@ -1,9 +1,13 @@
 <template name="ApplicationLayout">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
 	<nav>
 		{{> yield "navbar"}}
 	</nav>
 	<section>
-		{{> yield "content"}}
+		{{> loginButtons}} {{> yield "content"}}
 	</section>
 	<footer class="footer navbar-static-bottom">
 		{{> yield "footer"}}

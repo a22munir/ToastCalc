@@ -3,6 +3,7 @@ Template.ccinfo.onCreated(function () { //creating needed reactive variables for
 	this.ccCurrRate = new ReactiveVar();
 });
 
+
 Template.ccinfo.helpers({ //helper functions for getting reactive variables for inputs
 	showGoal() {
 			templateInstanceCcGoal = Template.instance();
@@ -11,7 +12,7 @@ Template.ccinfo.helpers({ //helper functions for getting reactive variables for 
 		showCurr() {
 			templateInstanceCcCurr = Template.instance();
 			return templateInstanceCcCurr.ccCurrRate.get(); //getting the current rate
-		}
+		},
 });
 
 
@@ -19,7 +20,7 @@ Template.ccinfo.events({ //responses to events
 
 	'change input[type=radio]': function (event) {
 		numSpeeches = event.currentTarget.value //getting the seleced radio fields
-		numSpeechesleft = 10 - numSpeeches; //number of speeches left 
+		numSpeechesleft = 10 - numSpeeches; //number of speeches left
 	},
 	'submit #dates': function (event, templateInstance) {
 		event.preventDefault();
@@ -39,10 +40,11 @@ Template.ccinfo.events({ //responses to events
 			return Math.round(time / numLeft);
 		}
 
-		let nowDays = diff(joinDateFormat, finishDateFormat) //the difference between the join date and now
+		let nowDays = diff(joinDateFormat, now) //the difference between the join date and now
 		let goalDays = diff(now, finishDateFormat); //the difference between now and the goal date
 		let finalGoalDate = speechRate(numSpeechesleft, goalDays);
 		let currentRate = speechRate(numSpeeches, nowDays) * numSpeechesleft;
+		console.log(currentRate);
 
 		templateInstanceCcGoal.ccGoalRate.set(finalGoalDate); //set goal value
 		templateInstanceCcCurr.ccCurrRate.set(currentRate); //set value
